@@ -45,7 +45,7 @@ class ImageProjection(Node):
         cv2.circle(cv_image, (int(uv[0]),int(uv[1])), 10, 255, -1)
 
         #resize for visualisation
-        cv_image_s = cv2.resize(cv_image, (0,0), fx=0.5, fy=0.5)
+        cv_image_s = cv2.resize(cv_image, (0,0), fx=0.75, fy=0.75)
 
         cv2.imshow("Image window", cv_image_s)
         cv2.waitKey(1)
